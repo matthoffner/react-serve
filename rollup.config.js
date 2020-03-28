@@ -5,7 +5,7 @@ import replace from 'rollup-plugin-replace';
 import refresh from 'rollup-plugin-react-refresh';
 
 let config = {
-    input: './src/index.js',
+    input: `${process.cwd()}/src/index.js`,
     output: {
         dir: 'dist',
         format: 'esm',
@@ -15,7 +15,10 @@ let config = {
         replace({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
         }),
-        babel(),
+        babel({
+            presets: ["@babel/preset-react"],
+            plugins: ["react-refresh/babel"]
+        }),
         node_resolve(),
         commonjs({
             namedExports: {
