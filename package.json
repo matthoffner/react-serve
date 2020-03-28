@@ -1,10 +1,10 @@
 {
-    "name": "react-serve",
+    "name": "reactmon",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
     "bin": {
-        "react-serve": "nollup -c --hot --content-base public --port 9001"
+        "reactmon": "nollup -c --hot --content-base public --port 9001"
     },
     "scripts": {
         "clean": "rm -rf node_Modules && rm package-lock.json",

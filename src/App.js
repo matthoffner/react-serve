@@ -3,7 +3,7 @@ import React from 'react';
 let App = () => {
     return (
         <div className="App">
-            <h1>test</h1>
+            <h1>reactmon</h1>
         </div>
     );
 }
