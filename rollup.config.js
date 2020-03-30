@@ -23,7 +23,7 @@ let config = {
         commonjs({
             namedExports: {
                 'node_modules/react/index.js': [
-                    'Component', 'useState', 'useEffect'
+                    'Component', 'useState', 'useEffect', 'Suspense', 'lazy', 'useRef', 'useMemo', 'Fragment', 'useTransition', 'createContext'
                 ]
             }
         }),
